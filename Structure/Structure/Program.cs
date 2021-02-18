@@ -36,7 +36,8 @@ namespace Structure
             List<Items> items = new List<Items>()
             {
                 new Items{ID = "id1",Name = "Keyboard",Cost = 100},
-                new Items{ID = "id2",Name = "mouse",Cost = 200}
+                new Items{ID = "id2",Name = "mouse",Cost = 200},
+                new Items{ID = "id3",Name = "Chair",Cost = 300},
             };
             
 
