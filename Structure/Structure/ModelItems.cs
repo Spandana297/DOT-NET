@@ -33,7 +33,8 @@ namespace Structure
             Console.WriteLine("Enter quantity:");
             int EnteredQuantity = int.Parse(Console.ReadLine()); 
             int Quantity = EnteredQuantity; //unboxing
-            ItemCost = items.FirstOrDefault(c => c.Name == Selected).Cost;
+            ItemCost = items.FirstOrDefault(c => c.Name.ToLower() == Selected.ToLower()).Cost;
+            //ItemCost = items.First(c => c.Name.ToLower() == Selected.ToLower()).Cost;
             Console.WriteLine(ItemCost);
             Payment pay = new Payment();
            pay.Costdetailes(ref ItemCost, Quantity, Selected); //pass as ref

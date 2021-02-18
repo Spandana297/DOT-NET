@@ -16,7 +16,7 @@ namespace Structure
         public void Costdetailes(ref int ItemCost, int Quantity, string Selected)
         {
             int total = ItemCost * Quantity;
-            double totalcost = total * 0.18;
+            double totalcost = total+ total * 0.18;
             Console.WriteLine("The selected item is :" + Selected);
             Console.WriteLine("The cost of the item is :" + ItemCost);
             Console.WriteLine("The cost of the item with GST is :" + totalcost);
