@@ -4,7 +4,7 @@ namespace ClassLibrary1
 {
     public partial class Class1
     {
-        public void Greeting1()   //error** //virtual and then ovrride
+        public void Greeting()   //error** //virtual and then ovrride
         {
             Console.WriteLine("Hello!!!!!.....");// partial methods (return type-> void,cannot use out parameters
             Console.WriteLine("Welcome to ABC Electronics ");

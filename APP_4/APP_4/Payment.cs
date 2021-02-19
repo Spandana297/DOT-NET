@@ -11,8 +11,8 @@ namespace APP_4
     }
     class Payment
     {
-
-
+       
+        // Calculates Total Cost
         public virtual  void  Costdetailes(ref int ItemCost, int Quantity,string Selected)
         {
              int TotalCost=ItemCost * Quantity;

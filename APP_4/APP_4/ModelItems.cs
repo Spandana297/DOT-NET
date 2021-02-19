@@ -24,7 +24,7 @@ namespace APP_4
         {
             Payment Pay = new Payment();
             VClass vClass = new VClass();
-            Class1 greet = new Class1();
+           
             Console.WriteLine("The Items available are:\n");
             for (int i = 0; i < items.Count; i++)
             {

@@ -21,21 +21,7 @@ namespace APP_4
     {
         static void Main(string[] args)
         {
-            //List<Items> items = new List<Items>();
-            //items.Add(new Items
-            //{
-            //    ID = "id1",
-            //    Name = "Keyboard",
-            //    Cost = 100,
-
-            //});
-            //items.Add(new Items
-            //{
-            //    ID = "id2",
-            //    Name = "Chair",
-            //    Cost = 200,
-
-            //});
+            
             List<Items> items = new List<Items>()
             {
                 new Items{ID = "id1",Name = "Keyboard",Cost = 100},
@@ -47,8 +33,9 @@ namespace APP_4
 
             ModelItems model = new ModelItems();
             Class1 Greet = new Class1();
-          
-            Greet.Greeting1();
+            Service service = new Service();
+            service.DisplayService();
+           // Greet.Greeting();
             model.DisplayItems(items);
            
 
