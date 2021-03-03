@@ -7,72 +7,65 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication1.Account {
-    
-    
-    public partial class Login {
-        
+namespace WebApplication1
+{
+
+
+    public partial class Menu
+    {
+
         /// <summary>
-        /// ErrorMessage control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder ErrorMessage;
-        
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+
         /// <summary>
-        /// FailureText control.
+        /// TextBox1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal FailureText;
-        
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+
         /// <summary>
-        /// Email control.
+        /// TextBox2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Email;
-        
+        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+
         /// <summary>
-        /// Password control.
+        /// DropDownList1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Password;
-        
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+
         /// <summary>
-        /// RememberMe control.
+        /// TextBox3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox RememberMe;
-        
+        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+
         /// <summary>
-        /// RegisterHyperLink control.
+        /// saveWithAjax control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink RegisterHyperLink;
-        
-        /// <summary>
-        /// OpenAuthLogin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::WebApplication1.Account.OpenAuthProviders OpenAuthLogin;
+        protected global::System.Web.UI.WebControls.Button saveWithAjax;
     }
 }
