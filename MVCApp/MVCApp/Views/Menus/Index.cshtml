@@ -1,0 +1,68 @@
+﻿@model IEnumerable<MVCApp.Models.Menu>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Cusine_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cusine_Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cost)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cusine_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cusine_Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cost)
+        </td>
+        <td>
+           <button id="edit" onclick="EditPopUp(@item.ID)" class="btn btn-primary">Edit</button>
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
+<div  class="modal">
+    <div id="#dvMenuEdit" class="modal-body"></div>
+</div>
+<script>
+    function EditPopUp(id) {
+        $.ajax({
+            
+            url: '/Menus/MenuEdit?id=' + id,
+            contentType: 'application/html; charset=utf-8',
+            type: 'GET',
+            dataType: 'html',
+            success: function (res) {
+                alert("sucess");
+                debugger;
+                $(".modal").show();
+                $('#dvMenuEdit').html(res);
+            },
+        })
+
+    }
+   
+   
+</script>
